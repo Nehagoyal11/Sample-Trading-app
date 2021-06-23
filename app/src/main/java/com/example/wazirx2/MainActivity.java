@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
     if()
     {
         Notification notification=new NotificationCompat.Builder(this,APP.CHANNEL_1_ID)
-                .setContentTitle("this is notification")
+                .setContentTitle("this is notify")
                 .setContentText("price is increased")
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setCategory(NotificationCompat.CATEGORY_MESSAGE)
