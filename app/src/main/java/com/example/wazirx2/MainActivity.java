@@ -111,19 +111,22 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+    int num=Integer.valueOf(price1.toString());
 
 
-    Notification notification = new NotificationCompat.Builder(this, APP.CHANNEL_1_ID)
-            .setContentTitle("this is notify")
-            .setContentText("price is increased")
-            .setPriority(NotificationCompat.PRIORITY_HIGH)
-            .setCategory(NotificationCompat.CATEGORY_MESSAGE)
-            .build();
+   
+        Notification notification = new NotificationCompat.Builder(this, APP.CHANNEL_1_ID)
+                .setContentTitle("this is notification.")
+                .setContentText("price is increased")
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setCategory(NotificationCompat.CATEGORY_MESSAGE)
+                .build();
 
-    public void setNotificationManager(NotificationManagerCompat notificationManager)
-    {
-        notificationManager.notify(1,notification);
-    }
+        public void setNotificationManager (NotificationManagerCompat notificationManager)
+        {
+            notificationManager.notify(1, notification);
+        }
+
 
 
 
