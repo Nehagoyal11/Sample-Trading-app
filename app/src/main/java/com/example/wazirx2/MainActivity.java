@@ -113,11 +113,13 @@ public class MainActivity extends AppCompatActivity {
     }
     int num=Integer.valueOf(price1.toString());
 
+    //set condition to show notification
+        if()
 
-   
+    {
         Notification notification = new NotificationCompat.Builder(this, APP.CHANNEL_1_ID)
                 .setContentTitle("this is notification.")
-                .setContentText("price is increased")
+                .setContentText("price is increase")
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setCategory(NotificationCompat.CATEGORY_MESSAGE)
                 .build();
@@ -126,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
         {
             notificationManager.notify(1, notification);
         }
+    }
 
 
 

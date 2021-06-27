@@ -1,5 +1,5 @@
 package com.example.wazirx2;
-
+//channel for notification
 import android.app.Application;
 import android.app.Notification;
 import android.app.NotificationChannel;
